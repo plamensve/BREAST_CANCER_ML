@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt
 
 
-class DisplayInitialInfo:
+class FeatureVisualizer:
     def __init__(self, *, dataset=None, target_column=None, feature=None):
         self.dataset = dataset
         self.target_column = target_column
@@ -26,7 +26,7 @@ class DisplayInitialInfo:
                  label='Malignant', bins=15, alpha=0.5)
         plt.legend()
         plt.title('Benign and Malignant Tumor [Distribution]')
-        plt.xlabel('Values')
+        plt.xlabel(f'Values [{self.feature}]')
         plt.ylabel('Count')
         plt.show()
 
