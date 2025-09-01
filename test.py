@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 matplotlib.use('TkAgg')
-# Брой зве
+
 N = 250
 
 # Начални позиции на звездите
